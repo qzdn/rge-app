@@ -34,7 +34,7 @@ resources/images/items_poe/*
 
 resources/music/*
 !resources/music
-!resources/music/ps2_menu_ambience.mp3
+!resources/music/ps2_menu_ambience.ogg
 
 resources/sfx/*
 !resources/sfx

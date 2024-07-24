@@ -1,6 +1,6 @@
 extends Node
 
-@onready var debug:                 bool    = true
+@onready var debug:                 bool    = false
 
 @onready var window_resolution:     String  = "1280x720"
 @onready var screen_resolution:     Vector2 = get_viewport().size

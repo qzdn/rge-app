@@ -9,15 +9,29 @@ const WEAPONS_TEXTURE_PATH: String = "res://resources/images/items_poe/Weapons.p
 const WEAPONS_COORDS_PATH: String = "res://resources/images/items_poe/Weapons.json"
 
 @onready var grid_container = $GridContainer
+@onready var bg_timer = $BGDirChangeTimer
+@onready var anim_player = $AnimationPlayer
+
 @onready var armour_jewellery_texture: Texture = preload(ARMOUR_JEWELLERY_TEXTURE_PATH)
 @onready var weapons_jewellery_texture: Texture = preload(WEAPONS_TEXTURE_PATH)
 @onready var previous_screen_size: Vector2i = get_viewport().size
-
-var items: Array = []
+@onready var scroll_speed: int = 24
+@onready var directions: Array = [
+    Vector2i(scroll_speed, 0),              # to the right
+    Vector2i(-scroll_speed, 0),             # left
+    Vector2i(0, scroll_speed),              # down
+    Vector2i(0, -scroll_speed),             # top
+    Vector2i(scroll_speed, scroll_speed),   # down right
+    Vector2i(scroll_speed, -scroll_speed),  # up right
+    Vector2i(-scroll_speed, scroll_speed),  # down left
+    Vector2i(-scroll_speed, -scroll_speed)  # up left
+]
+@onready var scroll_direction: Vector2i = directions[randi() % directions.size()]
+@onready var items: Array = []
 
 
 func _ready():
-    randomize()  # rng initialize - seed gen
+    randomize()
     _load_images(armour_jewellery_texture, 
                  ARMOUR_JEWELLERY_TEXTURE_PATH, 
                  ARMOUR_JEWELLERY_COORDS_PATH,
@@ -28,6 +42,25 @@ func _ready():
                  items)
     _create_grid(items)
     _start_scrolling()
+
+
+func _on_bg_dir_change_timer_timeout() -> void:
+    anim_player.play("fade_out")
+
+
+func _on_animation_player_animation_finished(anim_name: StringName) -> void:
+    if anim_name == "fade_out":
+        scroll_direction = change_scroll_direction()
+        if Settings.debug:
+            print("New scroll speed: ", scroll_direction)
+        _create_grid(items)
+        anim_player.play("fade_in")
+    elif anim_name == "fade_in":
+        bg_timer.start()  # Ensure the timer restarts after the fade-in
+
+
+func change_scroll_direction() -> Vector2i:
+    return directions[randi() % directions.size()]
 
 
 func get_atlas_data(json_file: String) -> Dictionary:
@@ -103,7 +136,7 @@ func _create_grid(items: Array):
             sprite.texture = items[randi() % items.size()]
             sprite.scale = ITEM_SCALE * randf_range(0.7, 1.1)
             sprite.position = Vector2(x * CELL_SIZE.x, y * CELL_SIZE.y)
-            sprite.rotate(randf_range(-0.5, 0.5))
+            sprite.rotate(deg_to_rad(randi_range(-30, 30)))
             grid_container.add_child(sprite)
 
             # Debug: Check if sprite is visible and has texture
@@ -124,13 +157,12 @@ func _process(delta):
         _create_grid(items)  # recreate grid on res change
         previous_screen_size = screen_size
 
-    var scroll_speed = Vector2(48, -48) * delta
     var max_x = CELL_SIZE.x * GRID_SIZE.x
     var max_y = CELL_SIZE.y * GRID_SIZE.y
 
     for child in grid_container.get_children():
         if child is Sprite2D:
-            child.position -= scroll_speed # sprite movement
+            child.position += scroll_direction * delta # sprite movement
             
             # sprite movement when out of viewport
             if child.position.x < -CELL_SIZE.x / 2:

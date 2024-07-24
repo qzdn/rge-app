@@ -27,7 +27,6 @@ Settings="*res://scripts/Settings.gd"
 
 [debug]
 
-settings/stdout/print_fps=true
 settings/stdout/verbose_stdout=true
 settings/fps/force_fps=60
 
