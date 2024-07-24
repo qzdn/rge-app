@@ -1,0 +1,1359 @@
+{
+  "frames": {
+    "armour/shields/png/shield1.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/shields/png/shield7.png": {
+      "frame": {
+        "x": 156,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour3.png": {
+      "frame": {
+        "x": 312,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour4.png": {
+      "frame": {
+        "x": 312,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour5.png": {
+      "frame": {
+        "x": 0,
+        "y": 312,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour6.png": {
+      "frame": {
+        "x": 156,
+        "y": 312,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour7.png": {
+      "frame": {
+        "x": 468,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour1.png": {
+      "frame": {
+        "x": 468,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/shields/png/shield6.png": {
+      "frame": {
+        "x": 0,
+        "y": 548,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/shields/png/shield5.png": {
+      "frame": {
+        "x": 156,
+        "y": 548,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/shields/png/shield4.png": {
+      "frame": {
+        "x": 312,
+        "y": 472,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/bodyarmours/png/armour2.png": {
+      "frame": {
+        "x": 468,
+        "y": 472,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots1.png": {
+      "frame": {
+        "x": 624,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots6.png": {
+      "frame": {
+        "x": 624,
+        "y": 156,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves1.png": {
+      "frame": {
+        "x": 624,
+        "y": 312,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves2.png": {
+      "frame": {
+        "x": 624,
+        "y": 468,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves3.png": {
+      "frame": {
+        "x": 624,
+        "y": 624,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves4.png": {
+      "frame": {
+        "x": 780,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves5.png": {
+      "frame": {
+        "x": 780,
+        "y": 156,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves6.png": {
+      "frame": {
+        "x": 780,
+        "y": 312,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/gloves/png/gloves7.png": {
+      "frame": {
+        "x": 780,
+        "y": 468,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet1.png": {
+      "frame": {
+        "x": 780,
+        "y": 624,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet2.png": {
+      "frame": {
+        "x": 0,
+        "y": 784,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet3.png": {
+      "frame": {
+        "x": 156,
+        "y": 784,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet4.png": {
+      "frame": {
+        "x": 312,
+        "y": 780,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet5.png": {
+      "frame": {
+        "x": 468,
+        "y": 708,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet6.png": {
+      "frame": {
+        "x": 624,
+        "y": 780,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/helmets/png/helmet7.png": {
+      "frame": {
+        "x": 780,
+        "y": 780,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots5.png": {
+      "frame": {
+        "x": 936,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/shields/png/shield2.png": {
+      "frame": {
+        "x": 936,
+        "y": 156,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/shields/png/shield3.png": {
+      "frame": {
+        "x": 936,
+        "y": 312,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots4.png": {
+      "frame": {
+        "x": 936,
+        "y": 468,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots3.png": {
+      "frame": {
+        "x": 936,
+        "y": 624,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots2.png": {
+      "frame": {
+        "x": 936,
+        "y": 780,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "armour/boots/png/boots7.png": {
+      "frame": {
+        "x": 468,
+        "y": 864,
+        "w": 156,
+        "h": 156
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 156
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 156
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/belts/png/belt_poisonres.png": {
+      "frame": {
+        "x": 312,
+        "y": 936,
+        "w": 156,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/belts/png/belt_mana.png": {
+      "frame": {
+        "x": 0,
+        "y": 1016,
+        "w": 156,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/belts/png/belt_hp.png": {
+      "frame": {
+        "x": 156,
+        "y": 1016,
+        "w": 156,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/belts/png/belt_defence.png": {
+      "frame": {
+        "x": 312,
+        "y": 1016,
+        "w": 156,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/belts/png/belt_alleleres.png": {
+      "frame": {
+        "x": 624,
+        "y": 936,
+        "w": 156,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_eledmg.png": {
+      "frame": {
+        "x": 780,
+        "y": 936,
+        "w": 84,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 84,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_hp.png": {
+      "frame": {
+        "x": 864,
+        "y": 936,
+        "w": 84,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 84,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_mana.png": {
+      "frame": {
+        "x": 948,
+        "y": 936,
+        "w": 84,
+        "h": 84
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 84,
+        "h": 84
+      },
+      "sourceSize": {
+        "w": 84,
+        "h": 84
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_dex.png": {
+      "frame": {
+        "x": 624,
+        "y": 1016,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_poison.png": {
+      "frame": {
+        "x": 1092,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_mana.png": {
+      "frame": {
+        "x": 1092,
+        "y": 80,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_int.png": {
+      "frame": {
+        "x": 1092,
+        "y": 160,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_hp.png": {
+      "frame": {
+        "x": 1092,
+        "y": 240,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_strdex.png": {
+      "frame": {
+        "x": 1092,
+        "y": 320,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_coldres.png": {
+      "frame": {
+        "x": 1092,
+        "y": 400,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_str.png": {
+      "frame": {
+        "x": 1092,
+        "y": 480,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_fireres.png": {
+      "frame": {
+        "x": 1092,
+        "y": 560,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_strdexint.png": {
+      "frame": {
+        "x": 1092,
+        "y": 640,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_lightres.png": {
+      "frame": {
+        "x": 1092,
+        "y": 720,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/amulets/png/amulet_strint.png": {
+      "frame": {
+        "x": 1092,
+        "y": 800,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "jewellery/rings/png/ring_physdmg.png": {
+      "frame": {
+        "x": 1092,
+        "y": 880,
+        "w": 80,
+        "h": 80
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 80
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 80
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "Armour_Jewellery.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1172,
+      "h": 1096
+    },
+    "scale": 1
+  }
+}

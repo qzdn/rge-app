@@ -1,0 +1,1455 @@
+{
+  "frames": {
+    "weapons/onehand/axes/png/onehandaxe3.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 232
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 232
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 232
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/axes/png/onehandaxe1.png": {
+      "frame": {
+        "x": 156,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/axes/png/onehandaxe2.png": {
+      "frame": {
+        "x": 236,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/axes/png/onehandaxe4.png": {
+      "frame": {
+        "x": 392,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/axes/png/onehandaxe5.png": {
+      "frame": {
+        "x": 548,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/axes/png/onehandaxe_unique1.png": {
+      "frame": {
+        "x": 704,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/daggers/png/dagger1.png": {
+      "frame": {
+        "x": 860,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/daggers/png/dagger2.png": {
+      "frame": {
+        "x": 940,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/daggers/png/dagger3.png": {
+      "frame": {
+        "x": 1020,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/daggers/png/dagger4.png": {
+      "frame": {
+        "x": 1100,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/daggers/png/dagger5.png": {
+      "frame": {
+        "x": 1180,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/daggers/png/dagger_unique1.png": {
+      "frame": {
+        "x": 1260,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/maces/png/onehandmace1.png": {
+      "frame": {
+        "x": 1340,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/maces/png/onehandmace2.png": {
+      "frame": {
+        "x": 1420,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/maces/png/onehandmace3.png": {
+      "frame": {
+        "x": 1500,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/maces/png/onehandmace4.png": {
+      "frame": {
+        "x": 1580,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/maces/png/onehandmace5.png": {
+      "frame": {
+        "x": 1736,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/maces/png/onehandmace_unique1.png": {
+      "frame": {
+        "x": 1892,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/swords/png/onehandsword1.png": {
+      "frame": {
+        "x": 0,
+        "y": 232,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/swords/png/onehandsword2.png": {
+      "frame": {
+        "x": 80,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/swords/png/onehandsword3.png": {
+      "frame": {
+        "x": 160,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/swords/png/onehandsword4.png": {
+      "frame": {
+        "x": 316,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/swords/png/onehandsword5.png": {
+      "frame": {
+        "x": 472,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/swords/png/onehandsword_unique1.png": {
+      "frame": {
+        "x": 628,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/wands/png/wand1.png": {
+      "frame": {
+        "x": 708,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/wands/png/wand2.png": {
+      "frame": {
+        "x": 788,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/wands/png/wand3.png": {
+      "frame": {
+        "x": 868,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/wands/png/wand4.png": {
+      "frame": {
+        "x": 948,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/wands/png/wand5.png": {
+      "frame": {
+        "x": 1028,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/onehand/wands/png/wand_unique1.png": {
+      "frame": {
+        "x": 1108,
+        "y": 236,
+        "w": 80,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/bows/png/bow1.png": {
+      "frame": {
+        "x": 1188,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/bows/png/bow2.png": {
+      "frame": {
+        "x": 1344,
+        "y": 236,
+        "w": 156,
+        "h": 236
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 236
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 236
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/bows/png/bow3.png": {
+      "frame": {
+        "x": 1500,
+        "y": 236,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/bows/png/bow4.png": {
+      "frame": {
+        "x": 1656,
+        "y": 236,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/bows/png/bow5.png": {
+      "frame": {
+        "x": 1812,
+        "y": 236,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/staves/png/staff1.png": {
+      "frame": {
+        "x": 1968,
+        "y": 236,
+        "w": 80,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 80,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 80,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/bows/png/bow_unique1.png": {
+      "frame": {
+        "x": 0,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/staves/png/staff2.png": {
+      "frame": {
+        "x": 156,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/staves/png/staff3.png": {
+      "frame": {
+        "x": 312,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/staves/png/staff4.png": {
+      "frame": {
+        "x": 468,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/staves/png/staff5.png": {
+      "frame": {
+        "x": 624,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/staves/png/staff_unique1.png": {
+      "frame": {
+        "x": 780,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandaxes/png/twohandaxe1.png": {
+      "frame": {
+        "x": 936,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandaxes/png/twohandaxe2.png": {
+      "frame": {
+        "x": 1092,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandaxes/png/twohandaxe3.png": {
+      "frame": {
+        "x": 1248,
+        "y": 472,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandaxes/png/twohandaxe4.png": {
+      "frame": {
+        "x": 1404,
+        "y": 548,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandaxes/png/twohandaxe5.png": {
+      "frame": {
+        "x": 1560,
+        "y": 548,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandaxes/png/twohandaxe_unique1.png": {
+      "frame": {
+        "x": 1716,
+        "y": 548,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandmaces/png/twohandmace1.png": {
+      "frame": {
+        "x": 1872,
+        "y": 548,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandmaces/png/twohandmace2.png": {
+      "frame": {
+        "x": 0,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandmaces/png/twohandmace3.png": {
+      "frame": {
+        "x": 156,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandmaces/png/twohandmace4.png": {
+      "frame": {
+        "x": 312,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandmaces/png/twohandmace5.png": {
+      "frame": {
+        "x": 468,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandmaces/png/twohandmace_unique1.png": {
+      "frame": {
+        "x": 624,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandswords/png/twohandsword1.png": {
+      "frame": {
+        "x": 780,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandswords/png/twohandsword2.png": {
+      "frame": {
+        "x": 936,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandswords/png/twohandsword3.png": {
+      "frame": {
+        "x": 1092,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandswords/png/twohandsword4.png": {
+      "frame": {
+        "x": 1248,
+        "y": 784,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandswords/png/twohandsword5.png": {
+      "frame": {
+        "x": 1404,
+        "y": 860,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    },
+    "weapons/twohand/twohandswords/png/twohandsword_unique1.png": {
+      "frame": {
+        "x": 1560,
+        "y": 860,
+        "w": 156,
+        "h": 312
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 156,
+        "h": 312
+      },
+      "sourceSize": {
+        "w": 156,
+        "h": 312
+      },
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  "meta": {
+    "app": "http://free-tex-packer.com",
+    "version": "0.6.7",
+    "image": "Weapons.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 2048,
+      "h": 1172
+    },
+    "scale": 1
+  }
+}

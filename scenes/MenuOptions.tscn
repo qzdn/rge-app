@@ -1,0 +1,281 @@
+[gd_scene load_steps=7 format=3 uid="uid://h4stw3byfa6m"]
+
+[ext_resource type="Script" path="res://scripts/MenuOptions.gd" id="1_y4fui"]
+[ext_resource type="FontFile" uid="uid://k6bo1qg4ce3m" path="res://resources/fonts/Merriweather-Regular.ttf" id="2_kta0x"]
+
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("2_kta0x")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="FontFile" id="3"]
+fallbacks = Array[Font]([ExtResource("2_kta0x")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="FontFile" id="4"]
+fallbacks = Array[Font]([ExtResource("2_kta0x")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("2_kta0x")])
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_y4fui")
+
+[node name="Settings" type="TabContainer" parent="."]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+current_tab = 0
+tab_focus_mode = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="Video" type="TabBar" parent="Settings"]
+z_as_relative = false
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Resolution" type="HBoxContainer" parent="Settings/Video"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0510204
+anchor_top = 0.13555
+anchor_right = 0.94898
+anchor_bottom = 0.209719
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="ResolutionLabel" type="Label" parent="Settings/Video/Resolution"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("2")
+text = "Resolution"
+horizontal_alignment = 1
+
+[node name="ResolutionDropdown" type="OptionButton" parent="Settings/Video/Resolution"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 0
+theme_override_fonts/font = SubResource("3")
+item_count = 6
+popup/item_0/text = "1280x720"
+popup/item_1/text = "1366x768"
+popup/item_1/id = 1
+popup/item_2/text = "1600x900"
+popup/item_2/id = 2
+popup/item_3/text = "1920x1080"
+popup/item_3/id = 3
+popup/item_4/text = "2560x1440"
+popup/item_4/id = 4
+popup/item_5/text = "3840x2160"
+popup/item_5/id = 5
+
+[node name="Vsync" type="HBoxContainer" parent="Settings/Video"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0510204
+anchor_top = 0.237852
+anchor_right = 0.94898
+anchor_bottom = 0.31202
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VsyncCheckBox" type="CheckBox" parent="Settings/Video/Vsync"]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = SubResource("4")
+text = "Vsync"
+
+[node name="BorderlessFullscreen" type="HBoxContainer" parent="Settings/Video"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0510204
+anchor_top = 0.340153
+anchor_right = 0.94898
+anchor_bottom = 0.414322
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BorderlessCheckBox" type="CheckBox" parent="Settings/Video/BorderlessFullscreen"]
+layout_mode = 2
+focus_mode = 0
+theme_override_fonts/font = SubResource("4")
+text = "Borderless Fullscreen"
+
+[node name="Audio" type="TabBar" parent="Settings"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="VolumeMain" type="HBoxContainer" parent="Settings/Audio"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0510204
+anchor_top = 0.14578
+anchor_right = 0.94898
+anchor_bottom = 0.199488
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="VolumeMainLabel" type="Label" parent="Settings/Audio/VolumeMain"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("2")
+text = "Volume: Main"
+
+[node name="VolumeMasterSlider" type="HSlider" parent="Settings/Audio/VolumeMain"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 0
+min_value = -50.0
+max_value = 0.0
+step = 3.0
+value = -5.0
+scrollable = false
+
+[node name="VolumeSFX" type="HBoxContainer" parent="Settings/Audio"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0510204
+anchor_top = 0.248082
+anchor_right = 0.94898
+anchor_bottom = 0.30179
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="VolumeSFXLabel" type="Label" parent="Settings/Audio/VolumeSFX"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("2")
+text = "Volume: SFX  "
+
+[node name="VolumeSFXSlider" type="HSlider" parent="Settings/Audio/VolumeSFX"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 0
+min_value = -50.0
+max_value = 0.0
+step = 3.0
+value = -11.0
+scrollable = false
+
+[node name="VolumeBGM" type="HBoxContainer" parent="Settings/Audio"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.0510204
+anchor_top = 0.350384
+anchor_right = 0.94898
+anchor_bottom = 0.404092
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="VolumeBGMLabel" type="Label" parent="Settings/Audio/VolumeBGM"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("2")
+text = "Volume: BGM"
+horizontal_alignment = 1
+
+[node name="VolumeBGMSlider" type="HSlider" parent="Settings/Audio/VolumeBGM"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_mode = 0
+min_value = -50.0
+max_value = 0.0
+step = 3.0
+value = -11.0
+scrollable = false
+
+[node name="Input" type="TabBar" parent="Settings"]
+visible = false
+layout_mode = 2
+metadata/_edit_use_anchors_ = true
+metadata/_tab_index = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Settings/Input"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SaveSettingsButton" type="Button" parent="."]
+z_index = 5
+z_as_relative = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.809375
+anchor_top = 0.806944
+anchor_right = 0.95
+anchor_bottom = 0.909722
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 8
+size_flags_vertical = 4
+focus_mode = 0
+theme_override_fonts/font = SubResource("1")
+text = "Save"
+icon_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[connection signal="tab_clicked" from="Settings" to="." method="_on_SettingsTab_clicked"]
+[connection signal="tab_clicked" from="Settings/Video" to="." method="_on_VideoTab_selected"]
+[connection signal="button_down" from="Settings/Video/Resolution/ResolutionDropdown" to="." method="_on_ResolutionDropdown_button_down"]
+[connection signal="button_up" from="Settings/Video/Resolution/ResolutionDropdown" to="." method="_on_ResolutionDropdown_button_up"]
+[connection signal="item_selected" from="Settings/Video/Resolution/ResolutionDropdown" to="." method="_on_ResolutionDropdown_item_selected"]
+[connection signal="button_down" from="Settings/Video/Vsync/VsyncCheckBox" to="." method="_on_VsyncCheckBox_button_down"]
+[connection signal="button_up" from="Settings/Video/Vsync/VsyncCheckBox" to="." method="_on_VsyncCheckBox_button_up"]
+[connection signal="toggled" from="Settings/Video/Vsync/VsyncCheckBox" to="." method="_on_VsyncCheckBox_toggled"]
+[connection signal="button_down" from="Settings/Video/BorderlessFullscreen/BorderlessCheckBox" to="." method="_on_BorderlessCheckBox_button_down"]
+[connection signal="button_up" from="Settings/Video/BorderlessFullscreen/BorderlessCheckBox" to="." method="_on_BorderlessCheckBox_button_up"]
+[connection signal="toggled" from="Settings/Video/BorderlessFullscreen/BorderlessCheckBox" to="." method="_on_BorderlessCheckBox_toggled"]
+[connection signal="value_changed" from="Settings/Audio/VolumeMain/VolumeMasterSlider" to="." method="_on_VolumeMasterSlider_value_changed"]
+[connection signal="value_changed" from="Settings/Audio/VolumeSFX/VolumeSFXSlider" to="." method="_on_VolumeSFXSlider_value_changed"]
+[connection signal="value_changed" from="Settings/Audio/VolumeBGM/VolumeBGMSlider" to="." method="_on_VolumeBGMSlider_value_changed"]
+[connection signal="button_down" from="SaveSettingsButton" to="." method="_on_SaveSettingsButton_button_down"]
+[connection signal="button_up" from="SaveSettingsButton" to="." method="_on_SaveSettingsButton_button_up"]

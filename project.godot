@@ -1,0 +1,80 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="RGG App"
+run/main_scene="res://scenes/MenuMain.tscn"
+config/features=PackedStringArray("4.3")
+config/icon="res://resources/images/icon.png"
+
+[audio]
+
+driver/output_latency=20
+
+[autoload]
+
+BackgroundMusic="*res://scenes/BGMPlayer.tscn"
+sfxUI="*res://scenes/sfxUIPlayer.tscn"
+Settings="*res://scripts/Settings.gd"
+
+[debug]
+
+settings/stdout/print_fps=true
+settings/stdout/verbose_stdout=true
+settings/fps/force_fps=60
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/initial_position_type=3
+window/size/resizable=false
+window/energy_saving/keep_screen_on=false
+window/vsync/vsync_via_compositor=true
+
+[gui]
+
+theme/custom_font="res://resources/fonts/Merriweather-Regular.ttf"
+common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+char_stats={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":67,"key_label":0,"unicode":99,"location":0,"echo":false,"script":null)
+]
+}
+char_tree={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":84,"key_label":0,"unicode":116,"location":0,"echo":false,"script":null)
+]
+}
+char_inventory={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":73,"key_label":0,"unicode":105,"location":0,"echo":false,"script":null)
+]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+renderer/rendering_method.web="forward_plus"
+textures/default_filters/anisotropic_filtering_level=4
+environment/defaults/default_environment="res://default_env.tres"
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+quality/directional_shadow/size=2048
+lights_and_shadows/shadow_atlas/size=2048

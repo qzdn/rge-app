@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2mq4nh7yrgdp"]
+
+[ext_resource type="AudioStream" uid="uid://lti45ntdrtqt" path="res://resources/music/ps2_menu_ambience.mp3" id="1_0kpqp"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AudioStreamPlayer_MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_0kpqp")
+volume_db = 2.0
+autoplay = true
+bus = &"Music"
+parameters/looping = true
