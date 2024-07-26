@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://h4stw3byfa6m"]
+[gd_scene load_steps=9 format=3 uid="uid://h4stw3byfa6m"]
 
 [ext_resource type="Script" path="res://scripts/MenuOptions.gd" id="1_y4fui"]
+[ext_resource type="Texture2D" uid="uid://c8madb8clwtt2" path="res://resources/images/ui/elements/border.png" id="2_3nnhl"]
 [ext_resource type="FontFile" uid="uid://k6bo1qg4ce3m" path="res://resources/fonts/Merriweather-Regular.ttf" id="2_kta0x"]
+[ext_resource type="Theme" uid="uid://d0smgnl6rrodm" path="res://resources/themes/UI.tres" id="3_c16ca"]
+[ext_resource type="Texture2D" uid="uid://wq5n5fwejsq5" path="res://resources/images/ui/elements/button.png" id="5_bi1cg"]
 
 [sub_resource type="FontFile" id="2"]
 fallbacks = Array[Font]([ExtResource("2_kta0x")])
@@ -36,17 +39,6 @@ cache/0/16/0/underline_position = 0.0
 cache/0/16/0/underline_thickness = 0.0
 cache/0/16/0/scale = 1.0
 
-[sub_resource type="FontFile" id="1"]
-fallbacks = Array[Font]([ExtResource("2_kta0x")])
-subpixel_positioning = 0
-msdf_pixel_range = 14
-msdf_size = 128
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -57,8 +49,25 @@ grow_vertical = 2
 mouse_filter = 1
 script = ExtResource("1_y4fui")
 
+[node name="Border" type="NinePatchRect" parent="."]
+z_index = -3
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.0402778
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_3nnhl")
+patch_margin_left = 19
+patch_margin_top = 19
+patch_margin_right = 19
+patch_margin_bottom = 19
+metadata/_edit_use_anchors_ = true
+
 [node name="Settings" type="TabContainer" parent="."]
-z_index = -1
+self_modulate = Color(1, 1, 1, 0)
+z_index = -2
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -244,23 +253,37 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="SaveSettingsButton" type="Button" parent="."]
-z_index = 5
-z_as_relative = false
+[node name="Button_Start" type="NinePatchRect" parent="."]
+z_index = -1
+texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.809375
-anchor_top = 0.806944
-anchor_right = 0.95
-anchor_bottom = 0.909722
-grow_horizontal = 0
-grow_vertical = 0
-size_flags_horizontal = 8
-size_flags_vertical = 4
+anchor_top = 0.858333
+anchor_right = 0.949219
+anchor_bottom = 0.911111
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 6
+theme = ExtResource("3_c16ca")
+texture = ExtResource("5_bi1cg")
+patch_margin_left = 19
+patch_margin_top = 19
+patch_margin_right = 19
+patch_margin_bottom = 19
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Button_Start"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 focus_mode = 0
-theme_override_fonts/font = SubResource("1")
+theme_override_colors/font_color = Color(0.882353, 0.627451, 0.258824, 1)
 text = "Save"
-icon_alignment = 1
+flat = true
 metadata/_edit_use_anchors_ = true
 
 [connection signal="tab_clicked" from="Settings" to="." method="_on_SettingsTab_clicked"]
@@ -277,5 +300,5 @@ metadata/_edit_use_anchors_ = true
 [connection signal="value_changed" from="Settings/Audio/VolumeMain/VolumeMasterSlider" to="." method="_on_VolumeMasterSlider_value_changed"]
 [connection signal="value_changed" from="Settings/Audio/VolumeSFX/VolumeSFXSlider" to="." method="_on_VolumeSFXSlider_value_changed"]
 [connection signal="value_changed" from="Settings/Audio/VolumeBGM/VolumeBGMSlider" to="." method="_on_VolumeBGMSlider_value_changed"]
-[connection signal="button_down" from="SaveSettingsButton" to="." method="_on_SaveSettingsButton_button_down"]
-[connection signal="button_up" from="SaveSettingsButton" to="." method="_on_SaveSettingsButton_button_up"]
+[connection signal="button_down" from="Button_Start/Button" to="." method="_on_SaveSettingsButton_button_down"]
+[connection signal="button_up" from="Button_Start/Button" to="." method="_on_SaveSettingsButton_button_up"]

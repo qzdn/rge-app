@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d0smgnl6rrodm"]
+
+[ext_resource type="FontFile" uid="uid://k6bo1qg4ce3m" path="res://resources/fonts/Merriweather-Regular.ttf" id="1_ym43i"]
+
+[resource]
+default_font = ExtResource("1_ym43i")
+default_font_size = 18
+Button/fonts/font_size = ExtResource("1_ym43i")

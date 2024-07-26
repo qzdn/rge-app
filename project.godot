@@ -10,10 +10,13 @@ config_version=5
 
 [application]
 
-config/name="RGG App"
+config/name="RGE App"
 run/main_scene="res://scenes/MenuMain.tscn"
 config/features=PackedStringArray("4.3")
-config/icon="res://resources/images/icon.png"
+boot_splash/image="res://resources/images/ui/elements/logo.png"
+boot_splash/fullsize=false
+config/icon="res://resources/images/ui/elements/logo_menu.png"
+boot_splash/minimum_display_time=3000
 
 [audio]
 
@@ -72,6 +75,7 @@ renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
 renderer/rendering_method.web="forward_plus"
 textures/default_filters/anisotropic_filtering_level=4
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
 environment/defaults/default_environment="res://default_env.tres"
 quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true

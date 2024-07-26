@@ -22,8 +22,6 @@ resources/fonts/*
 
 resources/images/*
 !resources/images/
-!resources/images/icon.ico
-!resources/images/icon.png
 
 resources/images/items_poe/*
 !resources/images/items_poe
@@ -31,6 +29,23 @@ resources/images/items_poe/*
 !resources/images/items_poe/Armour_Jewellery.png
 !resources/images/items_poe/Weapons.json
 !resources/images/items_poe/Weapons.png
+
+resources/images/ui/*
+!resources/images/ui
+
+resources/images/ui/bg/*
+!resources/images/ui/bg
+!resources/images/ui/bg/Armour_Jewellery_shadow.png
+!resources/images/ui/bg/surface_darkgrey.jpg
+!resources/images/ui/bg/vingette_16x9.png
+!resources/images/ui/bg/Weapons_shadow.png
+
+resources/images/ui/elements/*
+!resources/images/ui/elements
+!resources/images/ui/elements/border.png
+!resources/images/ui/elements/button.png
+!resources/images/ui/elements/logo_menu.png
+!resources/images/ui/elements/logo.png
 
 resources/music/*
 !resources/music
@@ -40,3 +55,7 @@ resources/sfx/*
 !resources/sfx
 !resources/sfx/click_02_down.wav
 !resources/sfx/click_02_up.wav
+
+resources/themes/*
+!resources/themes
+!resources/themes/UI.tres

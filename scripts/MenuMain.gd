@@ -4,8 +4,8 @@ extends Control
 @onready var color_rect = $FadeIn/ColorRect
 @onready var animation_player = $FadeIn/AnimationPlayer
 @onready var settings_menu = $Options
-static var is_options_visible: bool = false
 static var is_first_run: bool = true
+
 
 func _ready():
     if is_first_run:
@@ -20,7 +20,7 @@ func _on_AnimationPlayer_animation_finished(anim_name: StringName) -> void:
     if anim_name == "fade_in":
         color_rect.visible = false
         canvas_layer.visible = false
-        
+
 
 func _on_Button_down():
     sfxUI.down_sound()
@@ -36,14 +36,14 @@ func _on_Button_Start_button_up():
     # ...
 
 
-func _on_Button_Options_button_up():
+func _on_Button_Settings_button_up():
     sfxUI.up_sound()
-    if not is_options_visible:
+    if not Settings.is_window_visible:
         settings_menu.show()
-        is_options_visible = true
+        Settings.is_window_visible = true
     else:
         settings_menu.hide()
-        is_options_visible = false
+        Settings.is_window_visible = false
 
 
 func _on_Button_Exit_button_up():

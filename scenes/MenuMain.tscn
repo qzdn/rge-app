@@ -2,8 +2,11 @@
 
 [ext_resource type="Script" path="res://scripts/MenuMain.gd" id="1_ipnwt"]
 [ext_resource type="PackedScene" uid="uid://d7ls88ardwn0" path="res://scenes/MenuBackground.tscn" id="2_8oypt"]
-[ext_resource type="FontFile" uid="uid://k6bo1qg4ce3m" path="res://resources/fonts/Merriweather-Regular.ttf" id="2_d5l40"]
 [ext_resource type="PackedScene" uid="uid://h4stw3byfa6m" path="res://scenes/MenuOptions.tscn" id="3_jmisl"]
+[ext_resource type="Texture2D" uid="uid://c8madb8clwtt2" path="res://resources/images/ui/elements/border.png" id="4_l26rk"]
+[ext_resource type="Theme" uid="uid://d0smgnl6rrodm" path="res://resources/themes/UI.tres" id="4_t2kj7"]
+[ext_resource type="Texture2D" uid="uid://c6abbmrj2xcvm" path="res://resources/images/ui/elements/logo_menu.png" id="5_crgl6"]
+[ext_resource type="Texture2D" uid="uid://wq5n5fwejsq5" path="res://resources/images/ui/elements/button.png" id="6_3x6hu"]
 
 [sub_resource type="Animation" id="Animation_c615q"]
 length = 0.001
@@ -30,360 +33,6 @@ _data = {
 "fade_in": SubResource("Animation_xwfgg")
 }
 
-[sub_resource type="FontFile" id="1"]
-fallbacks = Array[Font]([ExtResource("2_d5l40")])
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-cache/0/2/0/ascent = 0.0
-cache/0/2/0/descent = 0.0
-cache/0/2/0/underline_position = 0.0
-cache/0/2/0/underline_thickness = 0.0
-cache/0/2/0/scale = 1.0
-cache/0/3/0/ascent = 0.0
-cache/0/3/0/descent = 0.0
-cache/0/3/0/underline_position = 0.0
-cache/0/3/0/underline_thickness = 0.0
-cache/0/3/0/scale = 1.0
-cache/0/4/0/ascent = 0.0
-cache/0/4/0/descent = 0.0
-cache/0/4/0/underline_position = 0.0
-cache/0/4/0/underline_thickness = 0.0
-cache/0/4/0/scale = 1.0
-cache/0/5/0/ascent = 0.0
-cache/0/5/0/descent = 0.0
-cache/0/5/0/underline_position = 0.0
-cache/0/5/0/underline_thickness = 0.0
-cache/0/5/0/scale = 1.0
-cache/0/6/0/ascent = 0.0
-cache/0/6/0/descent = 0.0
-cache/0/6/0/underline_position = 0.0
-cache/0/6/0/underline_thickness = 0.0
-cache/0/6/0/scale = 1.0
-cache/0/7/0/ascent = 0.0
-cache/0/7/0/descent = 0.0
-cache/0/7/0/underline_position = 0.0
-cache/0/7/0/underline_thickness = 0.0
-cache/0/7/0/scale = 1.0
-cache/0/8/0/ascent = 0.0
-cache/0/8/0/descent = 0.0
-cache/0/8/0/underline_position = 0.0
-cache/0/8/0/underline_thickness = 0.0
-cache/0/8/0/scale = 1.0
-cache/0/9/0/ascent = 0.0
-cache/0/9/0/descent = 0.0
-cache/0/9/0/underline_position = 0.0
-cache/0/9/0/underline_thickness = 0.0
-cache/0/9/0/scale = 1.0
-cache/0/10/0/ascent = 0.0
-cache/0/10/0/descent = 0.0
-cache/0/10/0/underline_position = 0.0
-cache/0/10/0/underline_thickness = 0.0
-cache/0/10/0/scale = 1.0
-cache/0/11/0/ascent = 0.0
-cache/0/11/0/descent = 0.0
-cache/0/11/0/underline_position = 0.0
-cache/0/11/0/underline_thickness = 0.0
-cache/0/11/0/scale = 1.0
-cache/0/12/0/ascent = 0.0
-cache/0/12/0/descent = 0.0
-cache/0/12/0/underline_position = 0.0
-cache/0/12/0/underline_thickness = 0.0
-cache/0/12/0/scale = 1.0
-cache/0/13/0/ascent = 0.0
-cache/0/13/0/descent = 0.0
-cache/0/13/0/underline_position = 0.0
-cache/0/13/0/underline_thickness = 0.0
-cache/0/13/0/scale = 1.0
-cache/0/14/0/ascent = 0.0
-cache/0/14/0/descent = 0.0
-cache/0/14/0/underline_position = 0.0
-cache/0/14/0/underline_thickness = 0.0
-cache/0/14/0/scale = 1.0
-cache/0/15/0/ascent = 0.0
-cache/0/15/0/descent = 0.0
-cache/0/15/0/underline_position = 0.0
-cache/0/15/0/underline_thickness = 0.0
-cache/0/15/0/scale = 1.0
-cache/0/17/0/ascent = 0.0
-cache/0/17/0/descent = 0.0
-cache/0/17/0/underline_position = 0.0
-cache/0/17/0/underline_thickness = 0.0
-cache/0/17/0/scale = 1.0
-cache/0/18/0/ascent = 0.0
-cache/0/18/0/descent = 0.0
-cache/0/18/0/underline_position = 0.0
-cache/0/18/0/underline_thickness = 0.0
-cache/0/18/0/scale = 1.0
-cache/0/19/0/ascent = 0.0
-cache/0/19/0/descent = 0.0
-cache/0/19/0/underline_position = 0.0
-cache/0/19/0/underline_thickness = 0.0
-cache/0/19/0/scale = 1.0
-cache/0/20/0/ascent = 0.0
-cache/0/20/0/descent = 0.0
-cache/0/20/0/underline_position = 0.0
-cache/0/20/0/underline_thickness = 0.0
-cache/0/20/0/scale = 1.0
-cache/0/21/0/ascent = 0.0
-cache/0/21/0/descent = 0.0
-cache/0/21/0/underline_position = 0.0
-cache/0/21/0/underline_thickness = 0.0
-cache/0/21/0/scale = 1.0
-cache/0/22/0/ascent = 0.0
-cache/0/22/0/descent = 0.0
-cache/0/22/0/underline_position = 0.0
-cache/0/22/0/underline_thickness = 0.0
-cache/0/22/0/scale = 1.0
-cache/0/23/0/ascent = 0.0
-cache/0/23/0/descent = 0.0
-cache/0/23/0/underline_position = 0.0
-cache/0/23/0/underline_thickness = 0.0
-cache/0/23/0/scale = 1.0
-cache/0/24/0/ascent = 0.0
-cache/0/24/0/descent = 0.0
-cache/0/24/0/underline_position = 0.0
-cache/0/24/0/underline_thickness = 0.0
-cache/0/24/0/scale = 1.0
-cache/0/25/0/ascent = 0.0
-cache/0/25/0/descent = 0.0
-cache/0/25/0/underline_position = 0.0
-cache/0/25/0/underline_thickness = 0.0
-cache/0/25/0/scale = 1.0
-cache/0/26/0/ascent = 0.0
-cache/0/26/0/descent = 0.0
-cache/0/26/0/underline_position = 0.0
-cache/0/26/0/underline_thickness = 0.0
-cache/0/26/0/scale = 1.0
-cache/0/27/0/ascent = 0.0
-cache/0/27/0/descent = 0.0
-cache/0/27/0/underline_position = 0.0
-cache/0/27/0/underline_thickness = 0.0
-cache/0/27/0/scale = 1.0
-cache/0/28/0/ascent = 0.0
-cache/0/28/0/descent = 0.0
-cache/0/28/0/underline_position = 0.0
-cache/0/28/0/underline_thickness = 0.0
-cache/0/28/0/scale = 1.0
-cache/0/29/0/ascent = 0.0
-cache/0/29/0/descent = 0.0
-cache/0/29/0/underline_position = 0.0
-cache/0/29/0/underline_thickness = 0.0
-cache/0/29/0/scale = 1.0
-cache/0/30/0/ascent = 0.0
-cache/0/30/0/descent = 0.0
-cache/0/30/0/underline_position = 0.0
-cache/0/30/0/underline_thickness = 0.0
-cache/0/30/0/scale = 1.0
-cache/0/31/0/ascent = 0.0
-cache/0/31/0/descent = 0.0
-cache/0/31/0/underline_position = 0.0
-cache/0/31/0/underline_thickness = 0.0
-cache/0/31/0/scale = 1.0
-cache/0/32/0/ascent = 0.0
-cache/0/32/0/descent = 0.0
-cache/0/32/0/underline_position = 0.0
-cache/0/32/0/underline_thickness = 0.0
-cache/0/32/0/scale = 1.0
-cache/0/33/0/ascent = 0.0
-cache/0/33/0/descent = 0.0
-cache/0/33/0/underline_position = 0.0
-cache/0/33/0/underline_thickness = 0.0
-cache/0/33/0/scale = 1.0
-cache/0/34/0/ascent = 0.0
-cache/0/34/0/descent = 0.0
-cache/0/34/0/underline_position = 0.0
-cache/0/34/0/underline_thickness = 0.0
-cache/0/34/0/scale = 1.0
-cache/0/35/0/ascent = 0.0
-cache/0/35/0/descent = 0.0
-cache/0/35/0/underline_position = 0.0
-cache/0/35/0/underline_thickness = 0.0
-cache/0/35/0/scale = 1.0
-cache/0/36/0/ascent = 0.0
-cache/0/36/0/descent = 0.0
-cache/0/36/0/underline_position = 0.0
-cache/0/36/0/underline_thickness = 0.0
-cache/0/36/0/scale = 1.0
-cache/0/37/0/ascent = 0.0
-cache/0/37/0/descent = 0.0
-cache/0/37/0/underline_position = 0.0
-cache/0/37/0/underline_thickness = 0.0
-cache/0/37/0/scale = 1.0
-cache/0/38/0/ascent = 0.0
-cache/0/38/0/descent = 0.0
-cache/0/38/0/underline_position = 0.0
-cache/0/38/0/underline_thickness = 0.0
-cache/0/38/0/scale = 1.0
-cache/0/39/0/ascent = 0.0
-cache/0/39/0/descent = 0.0
-cache/0/39/0/underline_position = 0.0
-cache/0/39/0/underline_thickness = 0.0
-cache/0/39/0/scale = 1.0
-cache/0/40/0/ascent = 0.0
-cache/0/40/0/descent = 0.0
-cache/0/40/0/underline_position = 0.0
-cache/0/40/0/underline_thickness = 0.0
-cache/0/40/0/scale = 1.0
-cache/0/41/0/ascent = 0.0
-cache/0/41/0/descent = 0.0
-cache/0/41/0/underline_position = 0.0
-cache/0/41/0/underline_thickness = 0.0
-cache/0/41/0/scale = 1.0
-cache/0/42/0/ascent = 0.0
-cache/0/42/0/descent = 0.0
-cache/0/42/0/underline_position = 0.0
-cache/0/42/0/underline_thickness = 0.0
-cache/0/42/0/scale = 1.0
-cache/0/43/0/ascent = 0.0
-cache/0/43/0/descent = 0.0
-cache/0/43/0/underline_position = 0.0
-cache/0/43/0/underline_thickness = 0.0
-cache/0/43/0/scale = 1.0
-cache/0/44/0/ascent = 0.0
-cache/0/44/0/descent = 0.0
-cache/0/44/0/underline_position = 0.0
-cache/0/44/0/underline_thickness = 0.0
-cache/0/44/0/scale = 1.0
-cache/0/45/0/ascent = 0.0
-cache/0/45/0/descent = 0.0
-cache/0/45/0/underline_position = 0.0
-cache/0/45/0/underline_thickness = 0.0
-cache/0/45/0/scale = 1.0
-cache/0/46/0/ascent = 0.0
-cache/0/46/0/descent = 0.0
-cache/0/46/0/underline_position = 0.0
-cache/0/46/0/underline_thickness = 0.0
-cache/0/46/0/scale = 1.0
-cache/0/47/0/ascent = 0.0
-cache/0/47/0/descent = 0.0
-cache/0/47/0/underline_position = 0.0
-cache/0/47/0/underline_thickness = 0.0
-cache/0/47/0/scale = 1.0
-cache/0/48/0/ascent = 0.0
-cache/0/48/0/descent = 0.0
-cache/0/48/0/underline_position = 0.0
-cache/0/48/0/underline_thickness = 0.0
-cache/0/48/0/scale = 1.0
-cache/0/49/0/ascent = 0.0
-cache/0/49/0/descent = 0.0
-cache/0/49/0/underline_position = 0.0
-cache/0/49/0/underline_thickness = 0.0
-cache/0/49/0/scale = 1.0
-cache/0/50/0/ascent = 0.0
-cache/0/50/0/descent = 0.0
-cache/0/50/0/underline_position = 0.0
-cache/0/50/0/underline_thickness = 0.0
-cache/0/50/0/scale = 1.0
-cache/0/51/0/ascent = 0.0
-cache/0/51/0/descent = 0.0
-cache/0/51/0/underline_position = 0.0
-cache/0/51/0/underline_thickness = 0.0
-cache/0/51/0/scale = 1.0
-cache/0/52/0/ascent = 0.0
-cache/0/52/0/descent = 0.0
-cache/0/52/0/underline_position = 0.0
-cache/0/52/0/underline_thickness = 0.0
-cache/0/52/0/scale = 1.0
-cache/0/53/0/ascent = 0.0
-cache/0/53/0/descent = 0.0
-cache/0/53/0/underline_position = 0.0
-cache/0/53/0/underline_thickness = 0.0
-cache/0/53/0/scale = 1.0
-cache/0/54/0/ascent = 0.0
-cache/0/54/0/descent = 0.0
-cache/0/54/0/underline_position = 0.0
-cache/0/54/0/underline_thickness = 0.0
-cache/0/54/0/scale = 1.0
-cache/0/55/0/ascent = 0.0
-cache/0/55/0/descent = 0.0
-cache/0/55/0/underline_position = 0.0
-cache/0/55/0/underline_thickness = 0.0
-cache/0/55/0/scale = 1.0
-cache/0/56/0/ascent = 0.0
-cache/0/56/0/descent = 0.0
-cache/0/56/0/underline_position = 0.0
-cache/0/56/0/underline_thickness = 0.0
-cache/0/56/0/scale = 1.0
-cache/0/57/0/ascent = 0.0
-cache/0/57/0/descent = 0.0
-cache/0/57/0/underline_position = 0.0
-cache/0/57/0/underline_thickness = 0.0
-cache/0/57/0/scale = 1.0
-cache/0/58/0/ascent = 0.0
-cache/0/58/0/descent = 0.0
-cache/0/58/0/underline_position = 0.0
-cache/0/58/0/underline_thickness = 0.0
-cache/0/58/0/scale = 1.0
-cache/0/59/0/ascent = 0.0
-cache/0/59/0/descent = 0.0
-cache/0/59/0/underline_position = 0.0
-cache/0/59/0/underline_thickness = 0.0
-cache/0/59/0/scale = 1.0
-cache/0/60/0/ascent = 0.0
-cache/0/60/0/descent = 0.0
-cache/0/60/0/underline_position = 0.0
-cache/0/60/0/underline_thickness = 0.0
-cache/0/60/0/scale = 1.0
-cache/0/61/0/ascent = 0.0
-cache/0/61/0/descent = 0.0
-cache/0/61/0/underline_position = 0.0
-cache/0/61/0/underline_thickness = 0.0
-cache/0/61/0/scale = 1.0
-cache/0/62/0/ascent = 0.0
-cache/0/62/0/descent = 0.0
-cache/0/62/0/underline_position = 0.0
-cache/0/62/0/underline_thickness = 0.0
-cache/0/62/0/scale = 1.0
-cache/0/63/0/ascent = 0.0
-cache/0/63/0/descent = 0.0
-cache/0/63/0/underline_position = 0.0
-cache/0/63/0/underline_thickness = 0.0
-cache/0/63/0/scale = 1.0
-cache/0/64/0/ascent = 0.0
-cache/0/64/0/descent = 0.0
-cache/0/64/0/underline_position = 0.0
-cache/0/64/0/underline_thickness = 0.0
-cache/0/64/0/scale = 1.0
-cache/0/65/0/ascent = 0.0
-cache/0/65/0/descent = 0.0
-cache/0/65/0/underline_position = 0.0
-cache/0/65/0/underline_thickness = 0.0
-cache/0/65/0/scale = 1.0
-cache/0/66/0/ascent = 0.0
-cache/0/66/0/descent = 0.0
-cache/0/66/0/underline_position = 0.0
-cache/0/66/0/underline_thickness = 0.0
-cache/0/66/0/scale = 1.0
-cache/0/67/0/ascent = 0.0
-cache/0/67/0/descent = 0.0
-cache/0/67/0/underline_position = 0.0
-cache/0/67/0/underline_thickness = 0.0
-cache/0/67/0/scale = 1.0
-cache/0/68/0/ascent = 0.0
-cache/0/68/0/descent = 0.0
-cache/0/68/0/underline_position = 0.0
-cache/0/68/0/underline_thickness = 0.0
-cache/0/68/0/scale = 1.0
-
-[sub_resource type="FontFile" id="2"]
-fallbacks = Array[Font]([ExtResource("2_d5l40")])
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-
-[sub_resource type="FontFile" id="3"]
-fallbacks = Array[Font]([ExtResource("2_d5l40")])
-cache/0/16/0/ascent = 0.0
-cache/0/16/0/descent = 0.0
-cache/0/16/0/underline_position = 0.0
-cache/0/16/0/underline_thickness = 0.0
-cache/0/16/0/scale = 1.0
-
 [node name="Menu_Main" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -396,6 +45,7 @@ script = ExtResource("1_ipnwt")
 [node name="ScrollingBG" parent="." instance=ExtResource("2_8oypt")]
 
 [node name="FadeIn" type="CanvasLayer" parent="."]
+layer = -1
 
 [node name="ColorRect" type="ColorRect" parent="FadeIn"]
 modulate = Color(0, 0, 0, 1)
@@ -403,6 +53,8 @@ z_index = -999
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 8.0
+offset_right = 8.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0, 0, 0, 0)
@@ -418,68 +70,140 @@ visible = false
 z_index = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.078125
-anchor_top = 0.138889
-anchor_right = 0.726563
-anchor_bottom = 0.861111
+anchor_left = 0.05
+anchor_top = 0.188889
+anchor_right = 0.65
+anchor_bottom = 0.911111
 metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
-z_index = 1
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.781
-anchor_top = 0.388889
-anchor_right = 1.0
-anchor_bottom = 0.612695
-offset_left = 0.319946
-offset_right = -70.0
-offset_bottom = -0.140045
-grow_horizontal = 0
+[node name="Border" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 2
+anchor_left = 0.7
+anchor_top = 0.588889
+anchor_right = 0.95
+anchor_bottom = 0.911111
+offset_top = 3.05176e-05
+grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("4_l26rk")
+patch_margin_left = 39
+patch_margin_top = 39
+patch_margin_right = 39
+patch_margin_bottom = 39
 metadata/_edit_use_anchors_ = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer2"]
-z_index = 1
+[node name="CenterContainer" type="CenterContainer" parent="Border"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="PoeLogoPlaceholder" type="Sprite2D" parent="Border/CenterContainer"]
+position = Vector2(-0.199951, 7.39383)
+scale = Vector2(0.45625, 0.45625)
+texture = ExtResource("5_crgl6")
+offset = Vector2(0, -175)
+
+[node name="Button_Start" type="NinePatchRect" parent="."]
+texture_filter = 1
 layout_mode = 2
+anchor_left = 0.73125
+anchor_top = 0.644444
+anchor_right = 0.91875
+anchor_bottom = 0.697222
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 6
+theme = ExtResource("4_t2kj7")
+texture = ExtResource("6_3x6hu")
+patch_margin_left = 19
+patch_margin_top = 19
+patch_margin_right = 19
+patch_margin_bottom = 19
 metadata/_edit_use_anchors_ = true
 
-[node name="Label_Title" type="Label" parent="VBoxContainer2/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 6
-theme_override_fonts/font = SubResource("1")
-theme_override_font_sizes/font_size = 48
-text = "RGG App"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Button_Start" type="Button" parent="VBoxContainer2/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 6
+[node name="Button" type="Button" parent="Button_Start"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 focus_mode = 0
-theme_override_fonts/font = SubResource("2")
+theme_override_colors/font_color = Color(0.882353, 0.627451, 0.258824, 1)
 text = "Start"
+flat = true
+metadata/_edit_use_anchors_ = true
 
-[node name="Button_Options" type="Button" parent="VBoxContainer2/VBoxContainer"]
+[node name="Button_Settings" type="NinePatchRect" parent="."]
+texture_filter = 1
 layout_mode = 2
+anchor_left = 0.73125
+anchor_top = 0.722222
+anchor_right = 0.91875
+anchor_bottom = 0.775
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_vertical = 6
-focus_mode = 0
-theme_override_fonts/font = SubResource("2")
-toggle_mode = true
-text = "Options"
+theme = ExtResource("4_t2kj7")
+texture = ExtResource("6_3x6hu")
+patch_margin_left = 19
+patch_margin_top = 19
+patch_margin_right = 19
+patch_margin_bottom = 19
+metadata/_edit_use_anchors_ = true
 
-[node name="Button_Exit" type="Button" parent="VBoxContainer2/VBoxContainer"]
+[node name="Button" type="Button" parent="Button_Settings"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_color = Color(0.882353, 0.627451, 0.258824, 1)
+text = "Settings"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Button_Exit" type="NinePatchRect" parent="."]
 z_index = 1
+texture_filter = 1
 layout_mode = 2
+anchor_left = 0.73125
+anchor_top = 0.8
+anchor_right = 0.91875
+anchor_bottom = 0.852778
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_vertical = 6
+theme = ExtResource("4_t2kj7")
+texture = ExtResource("6_3x6hu")
+patch_margin_left = 19
+patch_margin_top = 19
+patch_margin_right = 19
+patch_margin_bottom = 19
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Button_Exit"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 focus_mode = 0
-theme_override_fonts/font = SubResource("3")
+theme_override_colors/font_color = Color(0.882353, 0.627451, 0.258824, 1)
 text = "Exit"
+flat = true
+metadata/_edit_use_anchors_ = true
 
 [connection signal="animation_finished" from="FadeIn/AnimationPlayer" to="." method="_on_AnimationPlayer_animation_finished"]
-[connection signal="button_down" from="VBoxContainer2/VBoxContainer/Button_Start" to="." method="_on_Button_down"]
-[connection signal="button_up" from="VBoxContainer2/VBoxContainer/Button_Start" to="." method="_on_Button_Start_button_up"]
-[connection signal="button_down" from="VBoxContainer2/VBoxContainer/Button_Options" to="." method="_on_Button_down"]
-[connection signal="button_up" from="VBoxContainer2/VBoxContainer/Button_Options" to="." method="_on_Button_Options_button_up"]
-[connection signal="button_down" from="VBoxContainer2/VBoxContainer/Button_Exit" to="." method="_on_Button_down"]
-[connection signal="button_up" from="VBoxContainer2/VBoxContainer/Button_Exit" to="." method="_on_Button_Exit_button_up"]
+[connection signal="button_down" from="Button_Start/Button" to="." method="_on_Button_down"]
+[connection signal="button_up" from="Button_Start/Button" to="." method="_on_Button_Start_button_up"]
+[connection signal="button_down" from="Button_Settings/Button" to="." method="_on_Button_down"]
+[connection signal="button_up" from="Button_Settings/Button" to="." method="_on_Button_Settings_button_up"]
+[connection signal="button_down" from="Button_Exit/Button" to="." method="_on_Button_down"]
+[connection signal="button_up" from="Button_Exit/Button" to="." method="_on_Button_Exit_button_up"]

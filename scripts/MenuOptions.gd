@@ -92,6 +92,9 @@ func _on_SaveSettingsButton_button_down() -> void:
 func _on_SaveSettingsButton_button_up() -> void:
     sfxUI.up_sound()
     Settings.save_settings()
+    if Settings.is_window_visible: 
+        Settings.is_window_visible = false
+        self.visible = false
 
 
 func _on_SettingsTab_clicked(tab: int) -> void:

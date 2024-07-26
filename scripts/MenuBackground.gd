@@ -1,14 +1,14 @@
 extends Node
 
-const GRID_SIZE: Vector2i = Vector2i(16, 16)
-const CELL_SIZE: Vector2i = Vector2i(256, 256)
-const ITEM_SCALE: Vector2 = Vector2(0.9, 0.9)
-const ARMOUR_JEWELLERY_TEXTURE_PATH: String = "res://resources/images/items_poe/Armour_Jewellery.png"
+const GRID_SIZE:  Vector2i = Vector2i(8, 8)
+const CELL_SIZE:  Vector2i = Vector2i(312, 312)
+const ITEM_SCALE: Vector2i = Vector2i(1, 1)
+const ARMOUR_JEWELLERY_TEXTURE_PATH: String = "res://resources/images/ui/bg/Armour_Jewellery_shadow.png"
 const ARMOUR_JEWELLERY_COORDS_PATH: String = "res://resources/images/items_poe/Armour_Jewellery.json"
-const WEAPONS_TEXTURE_PATH: String = "res://resources/images/items_poe/Weapons.png"
+const WEAPONS_TEXTURE_PATH: String = "res://resources/images/ui/bg/Weapons_shadow.png"
 const WEAPONS_COORDS_PATH: String = "res://resources/images/items_poe/Weapons.json"
 
-@onready var grid_container = $GridContainer
+@onready var grid_container = $Items/GridContainer
 @onready var bg_timer = $BGDirChangeTimer
 @onready var anim_player = $AnimationPlayer
 
@@ -54,6 +54,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
         if Settings.debug:
             print("New scroll speed: ", scroll_direction)
         _create_grid(items)
+        $BG.offset = Vector2i(0,0)
         anim_player.play("fade_in")
     elif anim_name == "fade_in":
         bg_timer.start()  # Ensure the timer restarts after the fade-in
@@ -152,6 +153,8 @@ func _create_grid(items: Array):
 
 # TODO: optimize?
 func _process(delta):
+    $BG.offset += scroll_direction * delta
+
     var screen_size: Vector2i = get_viewport().size * 2
     if screen_size != previous_screen_size:
         _create_grid(items)  # recreate grid on res change
