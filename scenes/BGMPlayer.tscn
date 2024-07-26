@@ -1,11 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://b2mq4nh7yrgdp"]
 
-[ext_resource type="AudioStream" uid="uid://dq7aoj4fmkx5g" path="res://resources/music/ps2_menu_ambience.ogg" id="1_1qd3t"]
+[ext_resource type="AudioStream" uid="uid://dq7aoj4fmkx5g" path="res://resources/music/ps2_menu_ambience.ogg" id="1_8kdu6"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="AudioStreamPlayer_MenuMusic" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("1_1qd3t")
+stream = ExtResource("1_8kdu6")
 volume_db = 2.0
 autoplay = true
 bus = &"Music"

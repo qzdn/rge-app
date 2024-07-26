@@ -1,8 +1,8 @@
 extends Node
 
 const GRID_SIZE:  Vector2i = Vector2i(8, 8)
-const CELL_SIZE:  Vector2i = Vector2i(312, 312)
-const ITEM_SCALE: Vector2i = Vector2i(1, 1)
+const CELL_SIZE:  Vector2i = Vector2i(300, 300)
+const ITEM_SCALE: Vector2 = Vector2(0.9, 0.9)
 const ARMOUR_JEWELLERY_TEXTURE_PATH: String = "res://resources/images/ui/bg/Armour_Jewellery_shadow.png"
 const ARMOUR_JEWELLERY_COORDS_PATH: String = "res://resources/images/items_poe/Armour_Jewellery.json"
 const WEAPONS_TEXTURE_PATH: String = "res://resources/images/ui/bg/Weapons_shadow.png"
@@ -55,6 +55,7 @@ func _on_animation_player_animation_finished(anim_name: StringName) -> void:
             print("New scroll speed: ", scroll_direction)
         _create_grid(items)
         $BG.offset = Vector2i(0,0)
+        $Fog.offset = Vector2i(0,0)
         anim_player.play("fade_in")
     elif anim_name == "fade_in":
         bg_timer.start()  # Ensure the timer restarts after the fade-in
@@ -135,9 +136,11 @@ func _create_grid(items: Array):
         for x in range(grid_width):
             var sprite = Sprite2D.new()
             sprite.texture = items[randi() % items.size()]
-            sprite.scale = ITEM_SCALE * randf_range(0.7, 1.1)
-            sprite.position = Vector2(x * CELL_SIZE.x, y * CELL_SIZE.y)
-            sprite.rotate(deg_to_rad(randi_range(-30, 30)))
+            #sprite.scale = ITEM_SCALE * randf_range(0.7, 1.1)
+            sprite.position = Vector2(
+                x * CELL_SIZE.x * randf_range(0.9, 1.1), 
+                y * CELL_SIZE.y * randf_range(0.9, 1.1))
+            sprite.rotate(deg_to_rad(randi_range(-45, 45)))
             grid_container.add_child(sprite)
 
             # Debug: Check if sprite is visible and has texture
@@ -154,6 +157,7 @@ func _create_grid(items: Array):
 # TODO: optimize?
 func _process(delta):
     $BG.offset += scroll_direction * delta
+    $Fog.offset -= scroll_direction * delta
 
     var screen_size: Vector2i = get_viewport().size * 2
     if screen_size != previous_screen_size:

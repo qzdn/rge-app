@@ -13,7 +13,6 @@
 		"ActionMapEditor",
 		"AnimatedSprite2D",
 		"AnimatedTexture",
-		"AnimatedValuesBackup",
 		"AnimationBezierTrackEdit",
 		"AnimationNode",
 		"AnimationNodeStateMachinePlayback",

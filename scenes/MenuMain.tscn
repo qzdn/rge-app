@@ -45,7 +45,7 @@ script = ExtResource("1_ipnwt")
 [node name="ScrollingBG" parent="." instance=ExtResource("2_8oypt")]
 
 [node name="FadeIn" type="CanvasLayer" parent="."]
-layer = -1
+layer = 5
 
 [node name="ColorRect" type="ColorRect" parent="FadeIn"]
 modulate = Color(0, 0, 0, 1)
@@ -57,7 +57,7 @@ offset_left = 8.0
 offset_right = 8.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0)
+color = Color(0, 0, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="FadeIn"]
 root_node = NodePath("../..")
