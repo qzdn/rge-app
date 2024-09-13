@@ -35,6 +35,7 @@ resources/images/ui/*
 
 resources/images/ui/bg/*
 !resources/images/ui/bg
+!resources/images/ui/bg/fog.png
 !resources/images/ui/bg/Armour_Jewellery_shadow.png
 !resources/images/ui/bg/surface_darkgrey.jpg
 !resources/images/ui/bg/vingette_16x9.png
