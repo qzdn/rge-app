@@ -107,6 +107,7 @@ focus_mode = 0
 theme_override_fonts/font = SubResource("3")
 item_count = 6
 popup/item_0/text = "1280x720"
+popup/item_0/id = 0
 popup/item_1/text = "1366x768"
 popup/item_1/id = 1
 popup/item_2/text = "1600x900"
