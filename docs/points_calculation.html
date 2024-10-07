@@ -3,136 +3,156 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Расчёт количества очков</title>
 
-    <script>
-      function calculateScore() {
-        // Получаем значения из полей формы
-        const walkthroughTime =
-          parseInt(document.getElementById("walkthroughHours").value) +
-          parseInt(document.getElementById("walkthroughMins").value) / 60;
-        const difficultySelected =
-          parseInt(document.getElementById("difficultySelected").value) || 1;
-        const difficultiesCount =
-          parseInt(document.getElementById("difficultiesCount").value) || 1;
-        const hardGenresCount =
-          parseInt(document.getElementById("hardGenresCount").value) || 0;
-        const scoreCritics =
-          parseInt(document.getElementById("scoreCritics").value) || 75;
-        const scoreUsers =
-          parseInt(document.getElementById("scoreUsers").value) || 75;
-
-        // Коэффициент сложности
-        let difficultyMultiplier;
-        if (difficultiesCount == 1) {
-          difficultyMultiplier = 1;
-        } else if (difficultiesCount == 2 && difficultySelected == 1) {
-          difficultyMultiplier = 1;
-        } else if (difficultiesCount == 2 && difficultySelected == 2) {
-          difficultyMultiplier = 1.25;
-        } else {
-          difficultyMultiplier =
-            0.85 +
-            ((difficultySelected - 1) / (difficultiesCount - 1)) * (1.4 - 0.85);
-        }
-
-        // Модификация для коротких игр
-        const timeFactor = 1 + Math.max(0, (5 - walkthroughTime) / 5); // 5 часовые игры
-
-        // Формула для множителя оценки
-        const ratingMultiplier =
-          1 + (85 - (scoreCritics + scoreUsers) / 2) / 200;
-
-        // Формула для сложных жанров
-        const genreMultiplier = 1 + 0.2 * hardGenresCount;
-
-        // Базовое значение
-        const baseValue = 25;
-
-        // Финальный расчёт
-        const score =
-          Math.pow(walkthroughTime, 1.2) *
-            Math.pow(difficultyMultiplier + timeFactor, 1.4) *
-            Math.pow(genreMultiplier, 1.4) *
-            ratingMultiplier +
-          baseValue;
-
-        // Выводим результат
-        document.getElementById(
-          "result"
-        ).textContent = `Очки за прохождение: ${score} = ${Math.ceil(score)}`;
+    <style>
+      #result {
+        font-weight: bold;
       }
-    </script>
+
+      fieldset {
+        margin-bottom: 12px;
+      }
+    </style>
   </head>
 
   <body>
     <form>
-      <label for="input">Время прохождения:</label>
-      <input
-        style="width: 42px"
-        type="number"
-        min="0"
-        id="walkthroughHours"
-        name="walkthroughHours"
-        value="1"
-      />ч
-      <input
-        style="width: 42px"
-        type="number"
-        min="0"
-        id="walkthroughMins"
-        name="walkthroughMins"
-        value="10"
-      />м <br /><br />
-      <label for="input">Количество сложностей:</label>
-      <input
-        style="width: 42px"
-        type="number"
-        min="1"
-        id="difficultiesCount"
-        name="difficultiesCount"
-        value="1"
-      />
-      <label for="input">Выбранная сложность:</label>
-      <input
-        style="width: 42px"
-        type="number"
-        min="1"
-        id="difficultySelected"
-        name="difficultySelected"
-        value="1"
-      />
-      <br /><br />
-      <label for="input">Количество сложных жанров:</label>
-      <input
-        type="number"
-        min="0"
-        id="hardGenresCount"
-        name="hardGenresCount"
-        value="0"
-      />
-      <br /><br />
-      <label for="input">Оценка критиков:</label>
-      <input
-        type="number"
-        min="1"
-        max="100"
-        id="scoreCritics"
-        name="scoreCritics"
-        value="75"
-      />
-      <label for="input">Оценка юзеров:</label>
-      <input
-        type="number"
-        min="1"
-        max="100"
-        id="scoreUsers"
-        name="scoreUsers"
-        value="75"
-      />
-      <br /><br />
+      <fieldset>
+        <legend>
+          <a href="https://www.howlongtobeat.com/" target="_blank"
+            >Время прохождения</a
+          >
+        </legend>
+        <input
+          type="number"
+          min="1"
+          max="1000"
+          id="walkthroughHours"
+          name="walkthroughHours"
+          value="1"
+        />ч
+        <input
+          type="number"
+          min="0"
+          max="59"
+          id="walkthroughMins"
+          name="walkthroughMins"
+          value="10"
+        />м
+      </fieldset>
+
+      <fieldset>
+        <legend>Есть ли выбор сложности?</legend>
+        <input
+          type="checkbox"
+          id="isDifficultiesCountMoreThanOne"
+          name="isDifficultiesCountMoreThanOne"
+          onclick="enableDifficultiesControls()"
+        />
+        <label for="isDifficultiesCountMoreThanOne">Да</label>
+        <br />
+        <label for="selectedDifficulty">Выбранная сложность:</label>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          id="selectedDifficulty"
+          name="selectedDifficulty"
+          value="2"
+          disabled
+          onchange="checkSelectedDifficulty()"
+        />
+        <br />
+        <label for="difficultiesCount">Количество сложностей:</label>
+        <input
+          type="number"
+          min="2"
+          max="100"
+          id="difficultiesCount"
+          name="difficultiesCount"
+          value="3"
+          disabled
+          onchange="enableTwoDifficultiesControls();checkSelectedDifficulty();"
+        />
+        <br />
+        <input
+          type="radio"
+          id="difficultiesEasyNormal"
+          name="difficulties"
+          disabled
+        />
+        <label for="difficultiesEasyNormal">Easy/Normal</label>
+        <input
+          type="radio"
+          id="difficultiesNormalHard"
+          name="difficulties"
+          disabled
+          checked
+        />
+        <label for="difficultiesNormalHard">Normal/Hard</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          Количество сложных жанров (<a
+            href="#"
+            title="Bullet hell, Shoot 'em up, Roguelike, RTS, JRPG, Souls-like, Metroidvania, Puzzle"
+            >?</a
+          >)
+        </legend>
+        <input
+          type="number"
+          min="0"
+          max="13"
+          id="hardGenresCount"
+          name="hardGenresCount"
+          value="0"
+        />
+        <br />
+        <!-- TODO: добавить веса для сложных жанров -->
+        <div style="display: none">
+          <input type="checkbox" id="genre1" name="genre1" disabled />
+          <label for="genre1" title="1">Bullet hell</label>
+          <input type="checkbox" id="genre2" name="genre2" disabled />
+          <label for="genre2" title="0.8">Shoot 'em up</label>
+          <input type="checkbox" id="genre3" name="genre3" disabled />
+          <label for="genre3" title="0.7">Roguelike</label>
+          <input type="checkbox" id="genre4" name="genre4" disabled />
+          <label for="genre4" title="0.5">RTS / JRPG / Souls-like</label>
+          <input type="checkbox" id="genre5" name="genre5" disabled />
+          <label for="genre5" title="0.3">Metroidvania / Puzzle</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <a href="https://www.metacritic.com/game/" target="_blank">Оценки</a>
+        </legend>
+        <label for="criticsScore">Metascore:</label>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          id="criticsScore"
+          name="criticsScore"
+          value="85"
+        />
+        <label for="usersScore">User score:</label>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          id="usersScore"
+          name="usersScore"
+          value="85"
+        />
+      </fieldset>
+
       <button type="button" onclick="calculateScore()">Посчитать!</button>
-      <b><label id="result"></label></b>
+      <label id="result"></label>
     </form>
+
+    <script type="text/javascript" src="points_calculation.js"></script>
   </body>
 </html>
