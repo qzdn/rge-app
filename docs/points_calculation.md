@@ -7,6 +7,7 @@ Points = \left( WalkthroughTimeMultiplier \times DifficultyMultiplier \times Har
 $$
 
 Итоговый результат округляется до целого числа в большую сторону:
+
 $$
 \lceil 68.5562 \rceil = 69
 $$
@@ -39,6 +40,7 @@ DifficultyMultiplier =
 $$
 
 Если в игре множественный выбор сложности (например, как в Silent Hill 2 - сложность боя и сложность загадок), то множитель высчитывается как среднее арифметическое значение:
+
 $$
 \overline{DifficultyMultiplier} = \frac{DifficultyMultiplier_{1} + DifficultyMultiplier_{2} + \dots + DifficultyMultiplier_{n}}{n}
 $$
