@@ -6,7 +6,8 @@
     <title>Расчёт количества очков</title>
 
     <style>
-      #result {
+      #result,
+      legend {
         font-weight: bold;
       }
 
@@ -38,7 +39,7 @@
           max="59"
           id="walkthroughMins"
           name="walkthroughMins"
-          value="10"
+          value="0"
         />м
       </fieldset>
 
@@ -56,24 +57,23 @@
         <input
           type="number"
           min="1"
-          max="100"
+          max="50"
           id="selectedDifficulty"
           name="selectedDifficulty"
           value="2"
           disabled
-          onchange="checkSelectedDifficulty()"
         />
         <br />
         <label for="difficultiesCount">Количество сложностей:</label>
         <input
           type="number"
           min="2"
-          max="100"
+          max="50"
           id="difficultiesCount"
           name="difficultiesCount"
           value="3"
           disabled
-          onchange="enableTwoDifficultiesControls();checkSelectedDifficulty();"
+          onchange="enableTwoDifficultiesControls()"
         />
         <br />
         <input
@@ -94,35 +94,21 @@
       </fieldset>
 
       <fieldset>
-        <legend>
-          Количество сложных жанров (<a
-            href="#"
-            title="Bullet hell, Shoot 'em up, Roguelike, RTS, JRPG, Souls-like, Metroidvania, Puzzle"
-            >?</a
-          >)
-        </legend>
-        <input
-          type="number"
-          min="0"
-          max="13"
-          id="hardGenresCount"
-          name="hardGenresCount"
-          value="0"
-        />
-        <br />
-        <!-- TODO: добавить веса для сложных жанров -->
-        <div style="display: none">
-          <input type="checkbox" id="genre1" name="genre1" disabled />
-          <label for="genre1" title="1">Bullet hell</label>
-          <input type="checkbox" id="genre2" name="genre2" disabled />
-          <label for="genre2" title="0.8">Shoot 'em up</label>
-          <input type="checkbox" id="genre3" name="genre3" disabled />
-          <label for="genre3" title="0.7">Roguelike</label>
-          <input type="checkbox" id="genre4" name="genre4" disabled />
-          <label for="genre4" title="0.5">RTS / JRPG / Souls-like</label>
-          <input type="checkbox" id="genre5" name="genre5" disabled />
-          <label for="genre5" title="0.3">Metroidvania / Puzzle</label>
-        </div>
+        <legend>Cложные жанры</legend>
+        <input type="checkbox" id="genre1" name="genre1" />
+        <label for="genre1">Bullet hell</label><br />
+
+        <input type="checkbox" id="genre2" name="genre2" />
+        <label for="genre2">Tactical RPG</label><br />
+
+        <input type="checkbox" id="genre3" name="genre3" />
+        <label for="genre3">RTS, Roguelike, JRPG, Shoot 'em up</label><br />
+
+        <input type="checkbox" id="genre4" name="genre4" />
+        <label for="genre4">Souls-like</label><br />
+
+        <input type="checkbox" id="genre5" name="genre5" />
+        <label for="genre5">Metroidvania, Puzzle / Quest</label>
       </fieldset>
 
       <fieldset>

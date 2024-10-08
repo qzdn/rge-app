@@ -47,11 +47,28 @@ $$
 
 ### 3. Множитель сложных жанров:
 
-Если игра содержит сложные жанры (Bullet hell, Shoot 'em up, Roguelike, RTS, JRPG, Souls-like, Metroidvania, Puzzle):
+Если игра содержит сложные жанры, то множитель рассчитывается следующим образом:
 
 $$
-HardGenresMultiplier = 1 + \left( 0.7 \times HardGenresCount \right)
+HardGenresMultiplier = 1 + 
+\left( 
+\sum_{i=1}^{5}{Weight}_i \times {Selected}_i 
+\right)
 $$
+
+Где веса для жанров следующие:
+
+$$
+\begin{aligned}
+\text{Weight}_1 &= 0.7, & \text{(Bullet hell)} \\
+\text{Weight}_2 &= 0.6, & \text{(Tactical RPG)} \\
+\text{Weight}_3 &= 0.5, & \text{(RTS, Roguelike, JRPG, Shoot 'em up)} \\
+\text{Weight}_4 &= 0.4, & \text{(Souls-like)} \\
+\text{Weight}_5 &= 0.2, & \text{(Metroidvania, Puzzle / Quest)} \\
+\end{aligned}
+$$
+
+Каждый жанр учитывается, если он выбран ($Selected_i = 1$), в противном случае $Selected_i = 0$.
 
 ### 4. Множитель рейтинга:
 

@@ -16,8 +16,6 @@ function calculateScore() {
     document.getElementById("difficultiesEasyNormal").checked || false;
   const difficultiesNormalHard =
     document.getElementById("difficultiesNormalHard").checked || false;
-  const hardGenresCount =
-    parseInt(document.getElementById("hardGenresCount").value) || 0;
   const criticsScore =
     parseInt(document.getElementById("criticsScore").value) || 85;
   const usersScore =
@@ -43,10 +41,22 @@ function calculateScore() {
   }
 
   // HardGenresMultiplier
-  const hardGenresMultiplier = 1 + 0.7 * hardGenresCount;
+  let selectedGenres = [
+    { checked: document.getElementById("genre1").checked, weight: 0.7 }, // Bullet hell
+    { checked: document.getElementById("genre2").checked, weight: 0.6 }, // Tactical RPG
+    { checked: document.getElementById("genre3").checked, weight: 0.5 }, // RTS, Roguelike, JRPG, Shoot 'em up
+    { checked: document.getElementById("genre4").checked, weight: 0.4 }, // Souls-like
+    { checked: document.getElementById("genre5").checked, weight: 0.2 }, // Metroidvania, Puzzle / Quest
+  ];
+
+  let selectedHardGenres = selectedGenres.reduce((total, genre) => {
+    return genre.checked ? total + genre.weight : total;
+  }, 0);
+
+  const hardGenresMultiplier = 1 + selectedHardGenres;
 
   // MetascoreMultiplier
-  const metascoreMultiplier = 1 + (85 - (criticsScore + usersScore) / 2) / 100;
+  const metascoreMultiplier = 1 + (85 - (criticsScore + usersScore) / 2) / 150;
 
   // Финальный расчёт
   const points =
@@ -73,16 +83,6 @@ function enableDifficultiesControls() {
     document.getElementById("selectedDifficulty").disabled = true;
     document.getElementById("difficultiesEasyNormal").disabled = true;
     document.getElementById("difficultiesNormalHard").disabled = true;
-  }
-}
-
-function checkSelectedDifficulty() {
-  if (
-    document.getElementById("selectedDifficulty").value >
-    document.getElementById("difficultiesCount").value
-  ) {
-    document.getElementById("selectedDifficulty").value =
-      document.getElementById("difficultiesCount").value;
   }
 }
 
