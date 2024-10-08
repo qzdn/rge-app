@@ -12,6 +12,7 @@ data_*/
 
 # Docs
 docs/*
+!docs/index.html
 !docs/points_calculation.html
 !docs/points_calculation.js
 !docs/points_calculation.md
