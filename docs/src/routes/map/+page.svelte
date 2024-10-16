@@ -11,5 +11,6 @@
 
   img {
     text-align: center;
+    max-width: 100%;
   }
 </style>

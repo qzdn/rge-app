@@ -24,5 +24,7 @@
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    max-width: 100%;
+    overflow: auto;
   } 
 </style>
