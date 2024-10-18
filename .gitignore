@@ -1,3 +1,4 @@
+##### RGE App #####
 # Godot-specific ignores
 .godot
 .import
@@ -9,9 +10,6 @@ export_presets.cfg
 *.translation
 .mono/
 data_*/
-
-# Docs
-docs_old/
 
 # Project and Game resources
 export
@@ -62,3 +60,30 @@ resources/sfx/*
 resources/themes/*
 !resources/themes
 !resources/themes/UI.tres
+
+##### Docs ######
+docs/node_modules
+
+# Media
+docs/src/lib/images/atlas.png
+docs/src/lib/images/atlas.jpg
+
+# Output
+docs/.output
+docs/.vercel
+docs/.svelte-kit
+docs/build
+
+# OS
+docs/.DS_Store
+docs/Thumbs.db
+
+# Env
+docs/.env
+docs/.env.*
+!.env.example
+!.env.test
+
+# Vite
+docs/vite.config.js.timestamp-*
+docs/vite.config.ts.timestamp-*
