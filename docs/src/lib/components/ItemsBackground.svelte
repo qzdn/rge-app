@@ -10,7 +10,7 @@
   // Pre-generate all image paths
   const imagePool = Array.from(
     { length: IMAGES_COUNT },
-    (_, i) => `/img/items/${i + 1}.webp`
+    (_, i) => `img/items/${i + 1}.webp`
   );
 
   function getRandomImagePaths(count: number): string[] {
