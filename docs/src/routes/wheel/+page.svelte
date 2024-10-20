@@ -1,8 +1,7 @@
 <script lang="ts">
-  import { onDestroy, onMount } from "svelte";
+  import { onDestroy } from "svelte";
   import { browser } from "$app/environment";
   import ItemsBackground from "$lib/components/ItemsBackground.svelte";
-  import { slide } from "svelte/transition";
 
   let dataArray: string[] = [];
   let currentIndex: number = 0;
@@ -16,14 +15,14 @@
 
   let rollAudio: HTMLAudioElement;
   let rollMusic: string = "";
-  const rollStopSound = "/snd/eto_4e_takoe.mp3";
+  const rollStopSound = "snd/eto_4e_takoe.mp3";
   let volume: number = 0.5;
 
   function randomizeRollMusic(): void {
     // Generate a random number between 1 and 9
     const randomNumber = Math.floor(Math.random() * 9) + 1;
     // Construct the file name
-    rollMusic = `/snd/roll_music_${randomNumber}.mp3`;
+    rollMusic = `snd/roll_music_${randomNumber}.mp3`;
   }
 
   async function loadFile(file: string): Promise<void> {
@@ -102,8 +101,8 @@
     </button>
   </div>
   <div class="bottom-elements">
-    <a role="button" on:click={() => loadFile("/data/games.txt")}>игры</a> |
-    <a role="button" on:click={() => loadFile("/data/items.txt")}>предметы</a> |
+    <a role="button" on:click={() => loadFile("data/games.txt")}>игры</a> |
+    <a role="button" on:click={() => loadFile("data/items.txt")}>предметы</a> |
     <a role="button">чё-то ещё xd</a>
     <input type="range" min="0" max="1" step="0.1" bind:value={volume} style="margin-left: 5rem;"/>
   </div>
