@@ -89,7 +89,7 @@
 
     <h3>4. Множитель рейтинга:</h3>
     Множитель рейтинга рассчитывается на основе среднего балла критиков и юзеров
-    с<a href="https://metacritic.com/games" target="_blank">Metacritic</a>:
+    с <a href="https://metacritic.com/games" target="_blank">Metacritic</a>:
     <KaTeXRenderer
       formula={`MetascoreMultiplier = 1 + \\frac{85 - \\left( \\frac{CriticsScore + UsersScore}{2} \\right)}{150}`}
       displayMode="display"

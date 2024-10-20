@@ -14,6 +14,7 @@
     <a href="{base}/" on:click={() => (isMenuOpen = false)}>Главная</a>
     <a href="{base}/rules" on:click={() => (isMenuOpen = false)}>Правила</a>
     <a href="{base}/map" on:click={() => (isMenuOpen = false)}>Карта</a>
+    <a href="{base}/wheel" on:click={() => (isMenuOpen = false)}>Колесо</a>
     <a href="{base}/calc" on:click={() => (isMenuOpen = false)}>Калькулятор</a>
     <span class="divider">|</span>
     <a
